@@ -14,7 +14,7 @@ public class WEB_OV_02_VerifyAddressInAddressBook {
 	public void verifyAddress() throws InterruptedException {
 		driver =BrowserFactory.launchApplication(driver,"Chrome","https://www.pepperfry.com/");
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		loginPage.LogInToApp("srujanee077@gmail.com", "SRuj@nee077");
+		loginPage.LogInToApp("", "");
 		ProfileDropDown profileSelect = PageFactory.initElements(driver, ProfileDropDown.class);
 		profileSelect.profileDropdownFlow("My Account","https://www.pepperfry.com/customer/dashboard");
 	}
