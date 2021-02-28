@@ -15,7 +15,7 @@ public class WEB_OV_01_VerifyPay_Address {
 	public void loginApp() throws InterruptedException {
 		driver =BrowserFactory.launchApplication(driver,"Chrome","https://www.pepperfry.com/");
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		loginPage.LogInToApp("srujanee077@gmail.com", "SRuj@nee077");
+		loginPage.LogInToApp("", "");
 		SearchItem searchProduct = PageFactory.initElements(driver, SearchItem.class);
 		searchProduct.searchPageFlowFistItemSelect("sofa","2");
 		CheckoutPage checkoutProd = PageFactory.initElements(driver, CheckoutPage.class);
